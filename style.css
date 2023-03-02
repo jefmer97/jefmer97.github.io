@@ -46,6 +46,21 @@ nav a:hover {
     overflow: hidden;
 }
 
+.img-div {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-border {
+    border: 1px solid #000;
+    max-width: 25%;
+    padding: 0.5rem;
+    border: 2.5px solid #000;
+    border-radius: 1rem;
+}
+
 .profile-picture {
-    
+    max-width: 100%;
+    border-radius: 1rem;
 }
