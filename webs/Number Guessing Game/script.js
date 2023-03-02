@@ -134,8 +134,8 @@ function resetGame() {
 
     const resetParas =
     document.querySelectorAll('.resultParas p')
-        for (const restPara of resetParas) {
-            resetParas.textContent = ''
+        for (const resetPara of resetParas) {
+            resetPara.textContent = ''
         }
 
         resetButton.parentNode.removeChild(resetButton)
