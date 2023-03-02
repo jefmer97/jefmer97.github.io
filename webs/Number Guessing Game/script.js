@@ -93,7 +93,7 @@ function checkGuess() {
         if (guessCount === 1) {
             guesses.textContent = 'Previous Guesses: '
         }
-        guesses.textContent += userGuess + ' '
+        guesses.textContent += userGuess + '\xa0' + '\xa0'
         
         if (userGuess === randomNumber) {
             lastResult.textContent = 'Congratulations! You got it right!'
