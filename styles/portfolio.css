@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Public Sans';
+    line-height: 1.5;
+}
+
+.portfolio-div {
+    margin: 0.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 2rem 4rem 0.5rem 4rem;
+}
+
+.web-project {
+    margin: 0.25rem 0;
+}
