@@ -88,6 +88,8 @@ let guessCount = 1
 let resetButton
 guessField.focus()
 
+ const audio = new Audio('/sounds/enter-button-sound.mp3')
+
 function checkGuess() {
     const userGuess = Number(guessField.value)
         if (guessCount === 1) {
@@ -101,7 +103,7 @@ function checkGuess() {
             lowOrHi.textContent = ""
             setGameOver()
         } else if (guessCount === 10) {
-            lastResult.textContent = '!!!FIN DEL JUEGO!!!'
+            lastResult.textContent = '!!! FIN DEL JUEGO !!!'
             lowOrHi.textContent = ''
             setGameOver()
         } else {
@@ -119,6 +121,9 @@ function checkGuess() {
 }
 
 guessSubmit.addEventListener('click', checkGuess)
+guessSubmit.addEventListener('click', () => {
+    audio.play()
+})
 
 function setGameOver() {
     guessField.disabled = true
