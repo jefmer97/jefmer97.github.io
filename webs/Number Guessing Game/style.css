@@ -41,6 +41,12 @@ h1 {
     font-size: 3.5rem;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 P {
     width: 60%;
     margin: 1rem auto;
@@ -48,6 +54,15 @@ P {
     line-height: 1.3;
     
 }
+
+@media (max-width: 500px) {
+    p {
+        width: 90%;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}
+
 
 p.game-description {
     text-align: justify;
@@ -62,6 +77,14 @@ p.game-description {
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .form {
+        width: 80%;
+        margin: 1rem auto;
+        font-size: 1.5rem;
+    }
+}
+
 .guessField {
     border: solid 3px #000;
     border-radius: 50rem;
@@ -72,6 +95,13 @@ p.game-description {
     font-size: 2rem;
     text-align: center;
     outline: none;
+}
+
+@media (max-width: 500px) {
+    .guessField {
+        width: 60%;
+        margin: 1rem;
+    }
 }
 
 .guessField:focus {
@@ -98,6 +128,14 @@ p.game-description {
     outline: none;
     text-transform: uppercase;
     width: 40%;
+}
+
+
+@media (max-width: 500px) {
+    .guessSubmit {
+        width: 60%;
+        margin: 1rem;
+    }
 }
 
 .guessSubmit:hover {
