@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('/ubuntu.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: ubuntu;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 10rem 0;
+    }
+}
+
+.wrapper {
+    width: 800px;
+    margin: 30px auto;
+    color: #001a21;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+h1, h2, h3 {
+    font-size: 4rem;
+    margin: 3rem 0;
+}
+
+#seconds, #mili, #minutes, p {
+    font-size: 2rem;
+}
+
+button {
+    display: inline-block;
+    border-radius: 3rem;
+    background: #29d2ff;
+    color: #fff;
+    border: solid 1px #29d2ff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    min-width: 150px;
+    margin: 4rem 1rem;
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    button {
+        display: flex;
+        min-width: 125px;
+        padding: 10px 15px;
+        font-size: 1.rem;
+        margin: 1.5rem auto;
+        justify-content: center;
+    }
+}
+
+#button-stop {
+    background: red;
+    border: solid 1px red;
+}
+
+#button-reset {
+    background: #bab6b6;
+    border: solid 1px #bab6b6;
+}
+
+span {
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    p {
+        margin-bottom: 4rem;
+    }
+}
+
